@@ -1,18 +1,3 @@
-// Last time updated at May 23, 2015, 08:32:23
-
-// Latest file can be found here: https://cdn.webrtc-experiment.com/ConcatenateBlobs.js
-
-// Muaz Khan    - www.MuazKhan.com
-// MIT License  - www.WebRTC-Experiment.com/licence
-// Source Code  - https://github.com/muaz-khan/ConcatenateBlobs
-// Demo         - https://www.WebRTC-Experiment.com/ConcatenateBlobs/
-
-// ___________________
-// ConcatenateBlobs.js
-
-// Simply pass array of blobs.
-// This javascript library will concatenate all blobs in single "Blob" object.
-
 (function() {
     function ConcatenateBlobs (blobs, type, callback) {
         var buffers = [];
@@ -60,8 +45,8 @@
         }
     }
 
-    if(typeof modules !== 'undefined') {
-        modules.export = ConcatenateBlobs;
+    if(typeof module !== 'undefined') {
+        module.exports = ConcatenateBlobs;
     }
 
     if(typeof window !== 'undefined') {
